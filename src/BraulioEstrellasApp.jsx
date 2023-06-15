@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SearchPlayer } from './components';
+import { SearchPlayer, PlayerInfo } from './components';
 
 export const BraulioEstrellasApp = () => {
     const [ player, setPlayer ] = useState('');
@@ -14,6 +14,9 @@ export const BraulioEstrellasApp = () => {
             <h1>Braulio Estrellas</h1>
             <SearchPlayer 
                 onNewPlayerSearch = { onSearchPlayer }
+            />
+            <PlayerInfo 
+                playerTag = { player }
             />
             
         </section>
